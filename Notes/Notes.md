@@ -23,7 +23,7 @@ On sait qu'une doit exister puisqu'on doit pouvoir lui donner un mot de passe, p
 J'ai utilisé pour cela un Logic Analyzer. Selon le wiki, j'ai installé le driver sigrok-firmware-fx2lafw et j'ai utilisé le logiciel pulseview pour voir des résultats.
 J'ai donc essayé différentes pins pour voir s'il y avait de l'activité sur l'une d'elle.
 
-[pulseview_id_tx.png]
+![](pulseview_id_tx.png)
 On peut observer un signal sur la pin 1 (miroir du serial), et sur la pin 11. On peut donc tenter une communiquation sur la pin 11.
 
 En se connectant en UART sur la pin 11 pour le TX et en testant les autres pins pour la RX, je peux lancer une connection UART via un FT232RL converter.
